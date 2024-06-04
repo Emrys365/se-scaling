@@ -1,0 +1,123 @@
+# Conv-TasNet medium: 14.3 M parameters
+optim: adam
+init: none
+unused_parameters: true
+max_epoch: 100
+batch_type: folded
+batch_size: 4 # batch_size 4 can be trained on 2 RTX 2080 Ti GPUs
+iterator_type: chunk
+chunk_length: 32000
+chunk_discard_short_samples: false
+num_iters_per_epoch: 8000
+num_workers: 4
+grad_clip: 5.0
+optim_conf:
+    lr: 1.0e-03
+    eps: 1.0e-08
+    weight_decay: 1.0e-05
+patience: 30
+val_scheduler_criterion:
+- valid
+- loss
+best_model_criterion:
+-   - valid
+    - loss
+    - min
+keep_nbest_models: 1
+scheduler: steplr
+scheduler_conf:
+    step_size: 2
+    gamma: 0.99
+
+allow_multi_rates: true
+
+preprocessor: enh
+channel_reordering: true
+force_single_channel: true
+# The categories list order must be the same everywhere in this config
+categories:
+- 1ch_8k
+- 1ch_8k_r
+- 1ch_16k_r
+- 1ch_48k
+- 1ch_24k
+- 1ch_16k
+- 2ch_8k
+- 2ch_8k_r
+- 2ch_16k
+- 2ch_16k_r
+- 5ch_8k
+- 5ch_16k
+- 8ch_8k_r
+- 8ch_16k_r
+num_spk: 1
+
+model_conf:
+    normalize_variance_per_ch: true
+    always_forward_in_48k: true
+    # The categories list order must be the same everywhere in this config
+    categories:
+    - 1ch_8k
+    - 1ch_8k_r
+    - 1ch_16k_r
+    - 1ch_48k
+    - 1ch_24k
+    - 1ch_16k
+    - 2ch_8k
+    - 2ch_8k_r
+    - 2ch_16k
+    - 2ch_16k_r
+    - 5ch_8k
+    - 5ch_16k
+    - 8ch_8k_r
+    - 8ch_16k_r
+
+#====================================================
+# Model configuration
+#====================================================
+encoder: conv
+encoder_conf:
+    channel: 1536 # for 48000 Hz input
+    kernel_size: 120
+    stride: 60
+decoder: conv
+decoder_conf:
+    channel: 1536 # for 48000 Hz input
+    kernel_size: 120
+    stride: 60
+separator: tcn
+separator_conf:
+    num_spk: 1
+    layer: 8             # number of conv modules in each TCN block
+    stack: 4             # number of TCN blocks
+    bottleneck_dim: 384  # bottleck channel dimension in all TCNs
+    hidden_dim: 512      # hidden channel dimension in all conv modules
+    kernel: 3            # kernel size of DepthwiseSeparableConv in each conv module
+    causal: False        # non-causal
+    norm_type: "gLN"     # global LayerNorm
+    nonlinear: relu      # activation function for final mask estiamtion
+
+# A list for criterions
+# The overlall loss in the multi-task learning will be:
+# loss = weight_1 * loss_1 + ... + weight_N * loss_N
+# The default `weight` for each sub-loss is 1.0
+criterions:
+  # The first criterion
+  - name: mr_l1_tfd
+    conf:
+      window_sz: [256, 512, 768, 1024]
+      hop_sz: null
+      eps: 1.0e-8
+      time_domain_weight: 0.5
+      normalize_variance: true
+      use_builtin_complex: true
+    wrapper: fixed_order
+    wrapper_conf:
+      weight: 1.0
+  # The second criterion
+  - name: si_snr
+    conf:
+      eps: 1.0e-7
+    wrapper: fixed_order
+    wrapper_conf:
+      weight: 0.0
