@@ -5,7 +5,7 @@ This repository contains configurations of the following SE models with differen
   * BSRNN
   * TF-GridNet
 
-The configruations are based on [ESPnet](https://github.com/espnet/espnet).
+The configruations are based on the [ESPnet](https://github.com/espnet/espnet) toolkit and our implementations for the above models are provided in [./espnet2/](https://github.com/Emrys365/se-scaling/blob/main/espnet2) as a reference.
 
 <!-- <style type="text/css">
 .tg  {border-collapse:collapse;border-color:#ccc;border-spacing:0;}
@@ -46,14 +46,14 @@ The configruations are based on [ESPnet](https://github.com/espnet/espnet).
     <td class="tg-v0mg">0.5</td>
     <td class="tg-v0mg">0.1</td>
     <td class="tg-v0mg">0.4</td>
-    <td class="tg-z4i2"><a href="https://github.com/anonymous-link/se-scaling/blob/main/conf/bsrnn_xtiny.yaml">conf/bsrnn_xtiny.yaml</a></td>
+    <td class="tg-z4i2"><a href="https://github.com/Emrys365/se-scaling/blob/main/conf/bsrnn_xtiny.yaml">conf/bsrnn_xtiny.yaml</a></td>
   </tr>
   <tr>
     <td class="tg-v0mg">✘</td>
     <td class="tg-v0mg">0.5</td>
     <td class="tg-v0mg">0.2</td>
     <td class="tg-v0mg">0.6</td>
-    <td class="tg-z4i2"><a href="https://github.com/anonymous-link/se-scaling/blob/main/conf/bsrnn_xtiny_noncausal.yaml">conf/bsrnn_xtiny_noncausal.yaml</a></td>
+    <td class="tg-z4i2"><a href="https://github.com/Emrys365/se-scaling/blob/main/conf/bsrnn_xtiny_noncausal.yaml">conf/bsrnn_xtiny_noncausal.yaml</a></td>
   </tr>
   <tr>
     <td class="tg-z4i2" rowspan="2">tiny</td>
@@ -61,14 +61,14 @@ The configruations are based on [ESPnet](https://github.com/espnet/espnet).
     <td class="tg-v0mg">1.3</td>
     <td class="tg-v0mg">0.6</td>
     <td class="tg-v0mg">1.7</td>
-    <td class="tg-z4i2"><a href="https://github.com/anonymous-link/se-scaling/blob/main/conf/bsrnn_tiny.yaml">conf/bsrnn_tiny.yaml</a></td>
+    <td class="tg-z4i2"><a href="https://github.com/Emrys365/se-scaling/blob/main/conf/bsrnn_tiny.yaml">conf/bsrnn_tiny.yaml</a></td>
   </tr>
   <tr>
     <td class="tg-v0mg">✘</td>
     <td class="tg-v0mg">1.5</td>
     <td class="tg-v0mg">0.7</td>
     <td class="tg-v0mg">2.2</td>
-    <td class="tg-z4i2"><a href="https://github.com/anonymous-link/se-scaling/blob/main/conf/bsrnn_tiny_noncausal.yaml">conf/bsrnn_tiny_noncausal.yaml</a></td>
+    <td class="tg-z4i2"><a href="https://github.com/Emrys365/se-scaling/blob/main/conf/bsrnn_tiny_noncausal.yaml">conf/bsrnn_tiny_noncausal.yaml</a></td>
   </tr>
   <tr>
     <td class="tg-z4i2" rowspan="2">small</td>
@@ -76,14 +76,14 @@ The configruations are based on [ESPnet](https://github.com/espnet/espnet).
     <td class="tg-v0mg">4.1</td>
     <td class="tg-v0mg">2.1</td>
     <td class="tg-v0mg">6.4</td>
-    <td class="tg-z4i2"><a href="https://github.com/anonymous-link/se-scaling/blob/main/conf/bsrnn_small.yaml">conf/bsrnn_small.yaml</a></td>
+    <td class="tg-z4i2"><a href="https://github.com/Emrys365/se-scaling/blob/main/conf/bsrnn_small.yaml">conf/bsrnn_small.yaml</a></td>
   </tr>
   <tr>
     <td class="tg-v0mg">✘</td>
     <td class="tg-v0mg">4.8</td>
     <td class="tg-v0mg">2.8</td>
     <td class="tg-v0mg">8.5</td>
-    <td class="tg-z4i2"><a href="https://github.com/anonymous-link/se-scaling/blob/main/conf/bsrnn_small_noncausal.yaml">conf/bsrnn_small_noncausal.yaml</a></td>
+    <td class="tg-z4i2"><a href="https://github.com/Emrys365/se-scaling/blob/main/conf/bsrnn_small_noncausal.yaml">conf/bsrnn_small_noncausal.yaml</a></td>
   </tr>
   <tr>
     <td class="tg-z4i2" rowspan="2">medium</td>
@@ -91,14 +91,14 @@ The configruations are based on [ESPnet](https://github.com/espnet/espnet).
     <td class="tg-v0mg">14.3</td>
     <td class="tg-v0mg">8.4</td>
     <td class="tg-v0mg">25.2</td>
-    <td class="tg-z4i2"><a href="https://github.com/anonymous-link/se-scaling/blob/main/conf/bsrnn_medium.yaml">conf/bsrnn_medium.yaml</a></td>
+    <td class="tg-z4i2"><a href="https://github.com/Emrys365/se-scaling/blob/main/conf/bsrnn_medium.yaml">conf/bsrnn_medium.yaml</a></td>
   </tr>
   <tr>
     <td class="tg-v0mg">✘</td>
     <td class="tg-v0mg">16.9</td>
     <td class="tg-v0mg">11.2</td>
     <td class="tg-v0mg">33.4</td>
-    <td class="tg-z4i2"><a href="https://github.com/anonymous-link/se-scaling/blob/main/conf/bsrnn_medium_noncausal.yaml">conf/bsrnn_medium_noncausal.yaml</a></td>
+    <td class="tg-z4i2"><a href="https://github.com/Emrys365/se-scaling/blob/main/conf/bsrnn_medium_noncausal.yaml">conf/bsrnn_medium_noncausal.yaml</a></td>
   </tr>
   <tr>
     <td class="tg-z4i2" rowspan="2">large</td>
@@ -106,14 +106,14 @@ The configruations are based on [ESPnet](https://github.com/espnet/espnet).
     <td class="tg-v0mg">52.9</td>
     <td class="tg-v0mg">33.4</td>
     <td class="tg-v0mg">99.9</td>
-    <td class="tg-z4i2"><a href="https://github.com/anonymous-link/se-scaling/blob/main/conf/bsrnn_large.yaml">conf/bsrnn_large.yaml</a></td>
+    <td class="tg-z4i2"><a href="https://github.com/Emrys365/se-scaling/blob/main/conf/bsrnn_large.yaml">conf/bsrnn_large.yaml</a></td>
   </tr>
   <tr>
     <td class="tg-v0mg">✘</td>
     <td class="tg-v0mg">63.1</td>
     <td class="tg-v0mg">44.3</td>
     <td class="tg-v0mg">132.5</td>
-    <td class="tg-z4i2"><a href="https://github.com/anonymous-link/se-scaling/blob/main/conf/bsrnn_large_noncausal.yaml">conf/bsrnn_large_noncausal.yaml</a></td>
+    <td class="tg-z4i2"><a href="https://github.com/Emrys365/se-scaling/blob/main/conf/bsrnn_large_noncausal.yaml">conf/bsrnn_large_noncausal.yaml</a></td>
   </tr>
   <tr>
     <td class="tg-z4i2" rowspan="2">xlarge</td>
@@ -121,14 +121,14 @@ The configruations are based on [ESPnet](https://github.com/espnet/espnet).
     <td class="tg-v0mg">83.6</td>
     <td class="tg-v0mg">66.1</td>
     <td class="tg-v0mg">197.7</td>
-    <td class="tg-z4i2"><a href="https://github.com/anonymous-link/se-scaling/blob/main/conf/bsrnn_large_double.yaml">conf/bsrnn_large_double.yaml</a></td>
+    <td class="tg-z4i2"><a href="https://github.com/Emrys365/se-scaling/blob/main/conf/bsrnn_large_double.yaml">conf/bsrnn_large_double.yaml</a></td>
   </tr>
   <tr>
     <td class="tg-v0mg">✘</td>
     <td class="tg-v0mg">104.1</td>
     <td class="tg-v0mg">87.9</td>
     <td class="tg-v0mg">262.3</td>
-    <td class="tg-z4i2"><a href="https://github.com/anonymous-link/se-scaling/blob/main/conf/bsrnn_large_double_noncausal.yaml">conf/bsrnn_large_double_noncausal.yaml</a></td>
+    <td class="tg-z4i2"><a href="https://github.com/Emrys365/se-scaling/blob/main/conf/bsrnn_large_double_noncausal.yaml">conf/bsrnn_large_double_noncausal.yaml</a></td>
   </tr>
 </tbody>
 </table>
@@ -175,7 +175,7 @@ The configruations are based on [ESPnet](https://github.com/espnet/espnet).
     <td class="tg-9wq8">1.1</td>
     <td class="tg-9wq8">-</td>
     <td class="tg-9wq8">8.9</td>
-    <td class="tg-lboi"><a href="https://github.com/anonymous-link/se-scaling/blob/main/conf/conv_tasnet_small.yaml">conf/conv_tasnet_small.yaml</a></td>
+    <td class="tg-lboi"><a href="https://github.com/Emrys365/se-scaling/blob/main/conf/conv_tasnet_small.yaml">conf/conv_tasnet_small.yaml</a></td>
   </tr>
   <tr>
     <td class="tg-lboi">medium</td>
@@ -183,7 +183,7 @@ The configruations are based on [ESPnet](https://github.com/espnet/espnet).
     <td class="tg-9wq8">14.3</td>
     <td class="tg-9wq8">-</td>
     <td class="tg-9wq8">18.7</td>
-    <td class="tg-lboi"><a href="https://github.com/anonymous-link/se-scaling/blob/main/conf/conv_tasnet_medium.yaml">conf/conv_tasnet_medium.yaml</a></td>
+    <td class="tg-lboi"><a href="https://github.com/Emrys365/se-scaling/blob/main/conf/conv_tasnet_medium.yaml">conf/conv_tasnet_medium.yaml</a></td>
   </tr>
   <tr>
     <td class="tg-lboi">large</td>
@@ -191,7 +191,7 @@ The configruations are based on [ESPnet](https://github.com/espnet/espnet).
     <td class="tg-9wq8">52.6</td>
     <td class="tg-9wq8">-</td>
     <td class="tg-9wq8">47.2</td>
-    <td class="tg-lboi"><a href="https://github.com/anonymous-link/se-scaling/blob/main/conf/conv_tasnet_large.yaml">conf/conv_tasnet_large.yaml</a></td>
+    <td class="tg-lboi"><a href="https://github.com/Emrys365/se-scaling/blob/main/conf/conv_tasnet_large.yaml">conf/conv_tasnet_large.yaml</a></td>
   </tr>
   <tr>
     <td class="tg-lboi">xlarge</td>
@@ -199,7 +199,7 @@ The configruations are based on [ESPnet](https://github.com/espnet/espnet).
     <td class="tg-9wq8">103.9</td>
     <td class="tg-9wq8">-</td>
     <td class="tg-9wq8">85.4</td>
-    <td class="tg-lboi"><a href="https://github.com/anonymous-link/se-scaling/blob/main/conf/conv_tasnet_xlarge.yaml">conf/conv_tasnet_xlarge.yaml</a></td>
+    <td class="tg-lboi"><a href="https://github.com/Emrys365/se-scaling/blob/main/conf/conv_tasnet_xlarge.yaml">conf/conv_tasnet_xlarge.yaml</a></td>
   </tr>
   <tr>
     <td class="tg-vqkg" colspan="2">DEMUCS-v4</td>
@@ -212,7 +212,7 @@ The configruations are based on [ESPnet](https://github.com/espnet/espnet).
     <td class="tg-9wq8">1.0</td>
     <td class="tg-9wq8">-</td>
     <td class="tg-9wq8">1.0</td>
-    <td class="tg-lboi"><a href="https://github.com/anonymous-link/se-scaling/blob/main/conf/demucsv4_tiny.yaml">conf/demucsv4_tiny.yaml</a></td>
+    <td class="tg-lboi"><a href="https://github.com/Emrys365/se-scaling/blob/main/conf/demucsv4_tiny.yaml">conf/demucsv4_tiny.yaml</a></td>
   </tr>
   <tr>
     <td class="tg-lboi">small</td>
@@ -220,7 +220,7 @@ The configruations are based on [ESPnet](https://github.com/espnet/espnet).
     <td class="tg-9wq8">4.1</td>
     <td class="tg-9wq8">-</td>
     <td class="tg-9wq8">3.5</td>
-    <td class="tg-lboi"><a href="https://github.com/anonymous-link/se-scaling/blob/main/conf/demucsv4_small.yaml">conf/demucsv4_small.yaml</a></td>
+    <td class="tg-lboi"><a href="https://github.com/Emrys365/se-scaling/blob/main/conf/demucsv4_small.yaml">conf/demucsv4_small.yaml</a></td>
   </tr>
   <tr>
     <td class="tg-lboi">medium</td>
@@ -228,7 +228,7 @@ The configruations are based on [ESPnet](https://github.com/espnet/espnet).
     <td class="tg-9wq8">16.2</td>
     <td class="tg-9wq8">-</td>
     <td class="tg-9wq8">13.0</td>
-    <td class="tg-lboi"><a href="https://github.com/anonymous-link/se-scaling/blob/main/conf/demucsv4_medium.yaml">conf/demucsv4_medium.yaml</a></td>
+    <td class="tg-lboi"><a href="https://github.com/Emrys365/se-scaling/blob/main/conf/demucsv4_medium.yaml">conf/demucsv4_medium.yaml</a></td>
   </tr>
   <tr>
     <td class="tg-lboi">large</td>
@@ -236,7 +236,7 @@ The configruations are based on [ESPnet](https://github.com/espnet/espnet).
     <td class="tg-9wq8">26.9</td>
     <td class="tg-9wq8">-</td>
     <td class="tg-9wq8">17.2</td>
-    <td class="tg-lboi"><a href="https://github.com/anonymous-link/se-scaling/blob/main/conf/demucsv4_large.yaml">conf/demucsv4_large.yaml</a></td>
+    <td class="tg-lboi"><a href="https://github.com/Emrys365/se-scaling/blob/main/conf/demucsv4_large.yaml">conf/demucsv4_large.yaml</a></td>
   </tr>
   <tr>
     <td class="tg-lboi">xlarge</td>
@@ -244,7 +244,7 @@ The configruations are based on [ESPnet](https://github.com/espnet/espnet).
     <td class="tg-9wq8">79.3</td>
     <td class="tg-9wq8">-</td>
     <td class="tg-9wq8">40.7</td>
-    <td class="tg-lboi"><a href="https://github.com/anonymous-link/se-scaling/blob/main/conf/demucsv4_xlarge.yaml">conf/demucsv4_xlarge.yaml</a></td>
+    <td class="tg-lboi"><a href="https://github.com/Emrys365/se-scaling/blob/main/conf/demucsv4_xlarge.yaml">conf/demucsv4_xlarge.yaml</a></td>
   </tr>
   <tr>
     <td class="tg-vqkg" colspan="2">TF-GridNet</td>
@@ -257,7 +257,7 @@ The configruations are based on [ESPnet](https://github.com/espnet/espnet).
     <td class="tg-9wq8">0.1</td>
     <td class="tg-9wq8">1.9</td>
     <td class="tg-9wq8">5.6</td>
-    <td class="tg-lboi"><a href="https://github.com/anonymous-link/se-scaling/blob/main/conf/tfgridnet_xxtiny.yaml">conf/tfgridnet_xxtiny.yaml</a></td>
+    <td class="tg-lboi"><a href="https://github.com/Emrys365/se-scaling/blob/main/conf/tfgridnet_xxtiny.yaml">conf/tfgridnet_xxtiny.yaml</a></td>
   </tr>
   <tr>
     <td class="tg-lboi">xtiny</td>
@@ -265,7 +265,7 @@ The configruations are based on [ESPnet](https://github.com/espnet/espnet).
     <td class="tg-9wq8">0.5</td>
     <td class="tg-9wq8">7.4</td>
     <td class="tg-9wq8">21.7</td>
-    <td class="tg-lboi"><a href="https://github.com/anonymous-link/se-scaling/blob/main/conf/tfgridnet_xtiny.yaml">conf/tfgridnet_xtiny.yaml</a></td>
+    <td class="tg-lboi"><a href="https://github.com/Emrys365/se-scaling/blob/main/conf/tfgridnet_xtiny.yaml">conf/tfgridnet_xtiny.yaml</a></td>
   </tr>
   <tr>
     <td class="tg-lboi">tiny</td>
@@ -273,7 +273,7 @@ The configruations are based on [ESPnet](https://github.com/espnet/espnet).
     <td class="tg-9wq8">1.5</td>
     <td class="tg-9wq8">24.1</td>
     <td class="tg-9wq8">70.5</td>
-    <td class="tg-lboi"><a href="https://github.com/anonymous-link/se-scaling/blob/main/conf/tfgridnet_tiny.yaml">conf/tfgridnet_tiny.yaml</a></td>
+    <td class="tg-lboi"><a href="https://github.com/Emrys365/se-scaling/blob/main/conf/tfgridnet_tiny.yaml">conf/tfgridnet_tiny.yaml</a></td>
   </tr>
   <tr>
     <td class="tg-lboi">small</td>
@@ -281,7 +281,7 @@ The configruations are based on [ESPnet](https://github.com/espnet/espnet).
     <td class="tg-9wq8">5.7</td>
     <td class="tg-9wq8">89.5</td>
     <td class="tg-9wq8">261.8</td>
-    <td class="tg-lboi"><a href="https://github.com/anonymous-link/se-scaling/blob/main/conf/tfgridnet_small.yaml">conf/tfgridnet_small.yaml</a></td>
+    <td class="tg-lboi"><a href="https://github.com/Emrys365/se-scaling/blob/main/conf/tfgridnet_small.yaml">conf/tfgridnet_small.yaml</a></td>
   </tr>
 </tbody>
 </table>

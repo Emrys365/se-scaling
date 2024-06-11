@@ -81,7 +81,7 @@ model_conf:
 #====================================================
 encoder: same
 decoder: same
-separator: demucsv3
+separator: demucsv4
 separator_conf:
   sources: [speech]
   nfft: 4096                # FFT size in STFT/iSTFT
