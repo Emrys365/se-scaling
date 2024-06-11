@@ -1,5 +1,5 @@
 # Description
-This repository contains configurations of the following SE models with different model sizes:
+This repository contains configurations of the following SE models with different model sizes used in the paper [Beyond Performance Plateaus: A Comprehensive Study on Scalability in Speech Enhancement](https://arxiv.org/abs/2406.04269):
   * Conv-TasNet
   * DEMUCS-v4
   * BSRNN
